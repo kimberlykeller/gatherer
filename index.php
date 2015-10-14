@@ -19,12 +19,21 @@
 		Other gaming interests include: Settlers of Catan, Sentinels of the Multiverse, Chez Geek, Call of Cthulhu, Arkham Horror.
 		</p>
 		<p>
-		He desires to g
+		He desires to gain accurate information about the Magic: The Gathering card or groupings of cards that he has searched for.
 		</p>
-
-		<p>Details of persona</p>
 		<h3>Use Cases</h3>
-		<p>Details of use cases</p>
+		<ol>
+			<li>	Aleck goes to gatherer.wizards.com with a specific card in mind.He wants to know all of the essential information
+		about this card.
+			</li>
+			<li>	Gatherer has a basic search funciton that he can type or copy/paste the card name into.</li>
+			<li>	Aleck begins typing the card name.</li>
+			<li>	Gatherer anticipates Aleck's request based on the first few characters and makes suggestions.</li>
+			<li>	Aleck can either type the full card name or select a suggestion.</li>
+			<li>	Aleck hits enter or clicks the "search" button.</li>
+			<li>	Gatherer fetches the page with the information requested.</li>
+		.</ol>
+
 		<hr>
 		<h3>Data Breakdown</h3>
 		<p><strong>Data Entities</strong></p>
