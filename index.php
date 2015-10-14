@@ -10,6 +10,7 @@
 		<p>Details of persona</p>
 		<h3>Use Cases</h3>
 		<p>Details of use cases</p>
+		<hr>
 		<h3>Data Breakdown</h3>
 		<p><strong>Data Entities</strong></p>
 		<ul>
