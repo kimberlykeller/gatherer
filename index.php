@@ -12,8 +12,6 @@
 		or bike repair. He is detail oriented, focused, and introverted, but enjoys small doses of social situations, such as Magic: The Gathering
 		tournaments or playing with his friends casually. He has a handful of interests that he dives deeply into, such as sci-fi and fantasy,
 		craft beer, etc.
-		</p>
-		<p>
 		He is technology oriented and will have some combination of newer mobile, tablet, laptop or desktop access. He may or may not
 		have put together his own desktop tower, but has the skills to do so.
 		</p>
