@@ -80,29 +80,10 @@
 				<li></li>
 			</ul>
 
-		<p>User</p>
-			<ul>
-				<li>Username</li>
-				<li>Email Address</li>
-				<li>Comments</li>
-				<li>DCI Number</li>
-				<li>Name</li>
-				<li><strong>Primary Key</strong> Email address</li>
-			</ul>
-
-		<p>Comments</p>
-		<ul>
-			<li>username</li>
-			<li>time and date stamp</li>
-			<li>rating</li>
-			<li>text</li>
-		</ul>
-
 		<hr>
 		<h3>Conceptual Model</h3>
 		<p>A card can be in many expansions but each expansion will only have one version of that card. Each expansion will have
-		many cards. A card can have many comments but that card can only have one of that commment. Many users can comment on many cards.
-		Many users can rate many cards but a card can only have one rating. </p>
+		many cards.  </p>
 
 	</body>
 </html>
