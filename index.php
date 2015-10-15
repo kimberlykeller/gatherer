@@ -19,7 +19,7 @@
 		Other gaming interests include: Settlers of Catan, Sentinels of the Multiverse, Chez Geek, Call of Cthulhu, Arkham Horror.
 		</p>
 		<p>
-		He desires to gain accurate information about the Magic: The Gathering card or groupings of cards that he has searched for.
+		<strong>Goal</strong>He desires to gain accurate information about the Magic: The Gathering card or groupings of cards that he has searched for.
 		</p>
 		<h3>Use Cases</h3>
 		<p><strong>Use Case 1 &rarr; Aleck Wants A Specific Card</strong></p>
@@ -44,11 +44,6 @@
 			<li>	Aleck clicks on the name or picture of the card he is interested in</li>
 			<li>	Gatherer fetches the specific information on that card and loads a page to display it</li>
 		</ol>
-		<hr>
-		<h3>Conceptual Model</h3>
-		<p>On Gatherer there are cards that are used to play a game by a player. The player wants information about the cards
-			in order to expand his knowledge of the game.
-		</p>
 
 		<hr>
 		<h3>Data Breakdown</h3>
@@ -70,42 +65,35 @@
 			<li>Converted Mana Cost</li>
 			<li>Color Identity</li>
 			<li>Rules Text</li>
-			<li>Flavor Text</li>
 			<li>Types</li>
-			<li>P/T &#40;power/toughness&#41;</li>
+			<li>P&#47;T &#40;power&#47;toughness&#41;</li>
 			<li>Rarity</li>
-			<li>Artists</li>
-			<li>Rulings?</li>
-			<li>Sets and Expansions</li>
-			<li>Mark</li>
+			<li>Artist</li>
+			<li>Rulings</li>
+			<li>Sets and&#47;or Expansions</li>
+			<li>Card Number</li>
 			<li>Community Rating</li>
 			<li>Format</li>
 			<li><strong>Primary Key</strong> Multiverse ID</li>
 		</ul>
-		<p>Color</p>
+			<p>Expansion</p>
 			<ul>
-				<li>White &#40;W&#41; </li>
-				<li>Blue &#40;U&#41;</li>
-				<li>Black &#40;B&#41;</li>
-				<li>Red &#40;R&#41;</li>
-				<li>Green &#40;G&#41;</li>
-				<li>WU</li>
-				<li>WB</li>
-				<li>WR</li>
-				<li>WG</li>
-				<li>UB</li>
-				<li>UR</li>
-				<li>UG</li>
-				<li>BR</li>
-				<li>BG</li>
-				<li>RG</li>
-
+				<li>Name</li>
+				<li>Release Date</li>
+				<li>Is this expansion a set? T or F</li>
+				<li>Number of cards</li>
+				<li>Set Symbol</li>
+				<li>Expansion Code</li>
+				<li>Artists</li>
+				<li></li>
 			</ul>
-		<p>Some Notes:</p>
-		<ul>
-			<li>Types &gt; Subtypes</li>
-			<li>Blocks &gt; Sets </li>
-		</ul>
+
+			<p>Comments</p>
+
+		<hr>
+		<h3>Conceptual Model</h3>
+		<p>A card can be in many expansions but each expansion will only have one printing of that card and each expansion
+		will have many cards.</p>
 
 	</body>
 </html>
