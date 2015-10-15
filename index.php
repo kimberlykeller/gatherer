@@ -44,6 +44,11 @@
 			<li>	Aleck clicks on the name or picture of the card he is interested in</li>
 			<li>	Gatherer fetches the specific information on that card and loads a page to display it</li>
 		</ol>
+		<hr>
+		<h3>Conceptual Model</h3>
+		<p>On Gatherer there are cards that are used to play a game by a player. The player wants information about the cards
+			in order to expand his knowledge of the game.
+		</p>
 
 		<hr>
 		<h3>Data Breakdown</h3>
@@ -74,17 +79,31 @@
 			<li>Sets and Expansions</li>
 			<li>Mark</li>
 			<li>Community Rating</li>
+			<li>Format</li>
 			<li><strong>Primary Key</strong> Multiverse ID</li>
 		</ul>
-		<p>The Game</p>
+		<p>Color</p>
 			<ul>
-				<li>Format</li>
-				<li>Rulings?</li>
+				<li>White &#40;W&#41; </li>
+				<li>Blue &#40;U&#41;</li>
+				<li>Black &#40;B&#41;</li>
+				<li>Red &#40;R&#41;</li>
+				<li>Green &#40;G&#41;</li>
+				<li>WU</li>
+				<li>WB</li>
+				<li>WR</li>
+				<li>WG</li>
+				<li>UB</li>
+				<li>UR</li>
+				<li>UG</li>
+				<li>BR</li>
+				<li>BG</li>
+				<li>RG</li>
+
 			</ul>
 		<p>Some Notes:</p>
 		<ul>
 			<li>Types &gt; Subtypes</li>
-			<li>Mana Cost &gt; CMC</li>
 			<li>Blocks &gt; Sets </li>
 		</ul>
 
