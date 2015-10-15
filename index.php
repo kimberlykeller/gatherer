@@ -9,7 +9,7 @@
 		<h3>Persona</h3>
 		<p>Aleck is 25 years old with a degree in Electrical Engineering. He enjoys tabletop gaming and problem solving.
 		In his spare time he builds or fixes small things by hand in his garage workshop, inlcudes things like woodworking
-		or bike repair. He is detail oriented, focused, and introverted, but enjoys small doses of social situations, such as Magic: The Gathering
+		or bike repair. He is detail oriented, focused, and introverted, but enjoys small doses of social situations, such as <em>Magic: The Gathering</em>
 		tournaments or playing with his friends casually. He has a handful of interests that he dives deeply into, such as sci-fi and fantasy,
 		craft beer, etc.
 		He is technology oriented and will have some combination of newer mobile, tablet, laptop or desktop access. He may or may not
@@ -19,7 +19,7 @@
 		Other gaming interests include: Settlers of Catan, Sentinels of the Multiverse, Chez Geek, Call of Cthulhu, Arkham Horror.
 		</p>
 		<p>
-		<strong>Goal</strong>He desires to gain accurate information about the Magic: The Gathering card or groupings of cards that he has searched for.
+		<strong>Goal</strong> He desires to gain accurate information about the Magic: The Gathering card or groupings of cards that he has searched for.
 		</p>
 		<h3>Use Cases</h3>
 		<p><strong>Use Case 1 &rarr; Aleck Wants A Specific Card</strong></p>
@@ -53,37 +53,26 @@
 		<ul>
 			<li>Card Picture</li>
 			<li>Card Name</li>
-			<li>Mana Cost</li>
 			<li>Converted Mana Cost</li>
-			<li>Color Identity</li>
 			<li>Rules Text</li>
-			<li>Types</li>
 			<li>P&#47;T &#40;power&#47;toughness&#41;</li>
 			<li>Rarity</li>
-			<li>Artist</li>
-			<li>Rulings</li>
 			<li>Sets and&#47;or Expansions</li>
 			<li>Card Number</li>
-			<li>Community Rating</li>
-			<li>Format</li>
 			<li><strong>Primary Key</strong> Multiverse ID</li>
 		</ul>
 		<p>Expansion</p>
-			<ul>
-				<li>Name</li>
-				<li>Release Date</li>
-				<li>Is this expansion a set? T or F</li>
-				<li>Number of cards</li>
-				<li>Set Symbol</li>
-				<li>Expansion Code</li>
-				<li>Artists</li>
-				<li></li>
-			</ul>
+		<ul>
+			<li>Name</li>
+			<li>Release Date</li>
+			<li>Is this expansion a set? T or F</li>
+			<li>Number of cards</li>
+			<li></li>
+		</ul>
 
 		<hr>
 		<h3>Conceptual Model</h3>
-		<p>A card can be in many expansions but each expansion will only have one version of that card. Each expansion will have
-		many cards.  </p>
+		<p>Many to many </p>
 
 	</body>
 </html>
