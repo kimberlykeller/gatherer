@@ -12,14 +12,15 @@
 		or bike repair. He is detail oriented, focused, and introverted, but enjoys small doses of social situations, such as <em>Magic: The Gathering</em>
 		tournaments or playing with his friends casually. He has a handful of interests that he dives deeply into, such as sci-fi and fantasy,
 		craft beer, etc.
-		He is technology oriented and will have some combination of newer mobile, tablet, laptop or desktop access. He may or may not
-		have put together his own desktop tower, but has the skills to do so.
+		He is technology and internet savvy. He will primarily access Gatherer through a desktop or laptop
+		with a high speed internet connection. He may have built his own desktop tower and owns his modem and router.
+		He is desperately waiting for Google Fiber so that he can break up with Comcast, because he knows that Comcast is evil.
 		</p>
 		<p>
 		Other gaming interests include: Settlers of Catan, Sentinels of the Multiverse, Chez Geek, Call of Cthulhu, Arkham Horror.
 		</p>
 		<p>
-		<strong>Goal</strong> He desires to gain accurate information about the Magic: The Gathering card or groupings of cards that he has searched for.
+		<strong>Goal:</strong> He desires to gain accurate information about the <em>Magic: The Gathering</em> card or grouping of cards that he has searched for.
 		</p>
 		<h3>Use Cases</h3>
 		<p><strong>Use Case 1 &rarr; Aleck Wants A Specific Card</strong></p>
@@ -54,12 +55,14 @@
 			<li>Card Picture</li>
 			<li>Card Name</li>
 			<li>Converted Mana Cost</li>
+			<li>Type</li>
 			<li>Rules Text</li>
 			<li>P&#47;T &#40;power&#47;toughness&#41;</li>
 			<li>Rarity</li>
 			<li>Sets and&#47;or Expansions</li>
 			<li>Card Number</li>
 			<li><strong>Primary Key</strong> Multiverse ID</li>
+			<li><strong>C Model Notes</strong> A card can be in many expansions</li>
 		</ul>
 		<p>Expansion</p>
 		<ul>
@@ -67,7 +70,7 @@
 			<li>Release Date</li>
 			<li>Is this expansion a set? T or F</li>
 			<li>Number of cards</li>
-			<li></li>
+			<li><strong>C Model Notes</strong> An expansion has many cards</li>
 		</ul>
 
 		<hr>
