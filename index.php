@@ -93,7 +93,7 @@
 		<hr>
 		<h3>Conceptual Model</h3>
 		<p>A card can be in many expansions but each expansion will only have one printing of that card and each expansion
-		will have many cards.</p>
+		will have many cards. d</p>
 
 	</body>
 </html>
