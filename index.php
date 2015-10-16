@@ -75,6 +75,7 @@
 		<hr>
 		<h3>Conceptual Model</h3>
 		<p>Many to many </p>
+		<img src="img/gatherer-erd.svg" alt="the ERD for the gatherer project">
 
 
 
