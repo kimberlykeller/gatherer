@@ -6,11 +6,6 @@
 <rect x="235.2" y="288.3" fill="none" width="74.2" height="26.5"/>
 <text transform="matrix(1 0 0 1 235.2257 297.5322)" font-family="'ArialMT'" font-size="13.0055">Card</text>
 <g>
-	<ellipse fill="none" stroke="#000000" stroke-miterlimit="10" cx="98.2" cy="110.3" rx="35.3" ry="16.3"/>
-	<rect x="77.1" y="107.7" fill="none" width="79.4" height="28.4"/>
-	<text transform="matrix(1 0 0 1 77.1078 113.345)" font-family="'ArialMT'" font-size="7.9545">Card Picture</text>
-</g>
-<g>
 	<ellipse fill="none" stroke="#000000" stroke-miterlimit="10" cx="107.2" cy="149.4" rx="35.3" ry="16.3"/>
 	<rect x="86.1" y="146.8" fill="none" width="79.4" height="28.4"/>
 	<text transform="matrix(1 0 0 1 86.1484 152.4771)" font-family="'ArialMT'" font-size="7.9545">Card Name</text>
@@ -34,7 +29,7 @@
 <rect x="78.1" y="457.5" fill="none" width="51.8" height="28.4"/>
 <text transform="matrix(1 0 0 1 78.1073 463.1565)" font-family="'ArialMT'" font-size="7.9545">Expansion</text>
 <text transform="matrix(1 0 0 1 78.1073 472.6565)" font-family="'ArialMT'" font-size="7.9545">ID</text>
-<text transform="matrix(1 0 0 1 86.1073 472.6565)" font-family="'ArialMT'" font-size="7.9545" letter-spacing="24"> </text>
+<text transform="matrix(1 0 0 1 86.1073 472.6565)" font-family="'ArialMT'" font-size="7.9545" letter-spacing="23"> </text>
 <g>
 	<ellipse fill="none" stroke="#000000" stroke-miterlimit="10" cx="99.6" cy="413.5" rx="35.3" ry="16.3"/>
 	<rect x="78.5" y="410.9" fill="none" width="79.4" height="28.4"/>
@@ -66,7 +61,6 @@
 	<rect x="484.4" y="251.9" fill="none" width="79.4" height="28.4"/>
 	<text transform="matrix(1 0 0 1 484.3593 257.5824)" font-family="'ArialMT'" font-size="7.9545">Number of Cards</text>
 </g>
-<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="142.6" y1="115.7" x2="244.4" y2="259.7"/>
 <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="142.6" y1="165.8" x2="227.4" y2="271.3"/>
 <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="142.6" y1="214.2" x2="208.4" y2="281.2"/>
 <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="148.4" y1="266.5" x2="208.4" y2="295.2"/>
