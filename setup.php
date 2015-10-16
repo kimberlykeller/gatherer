@@ -7,14 +7,22 @@
 	<body>
 		<h3>Setting up....</h3>
 
+		CREATE TABLE expansion (
+			name
+			releaseDate
+			numberOfCards
+			expansionOrSet
+			expansionId
+
+
 		CREATE TABLE card (
-			cardPicture
 			cardName
 			convManaCost
 			type
 			rulesText
 			rarity
 			cardNumber
+			multiverseId
 
 		<br>...Done
 

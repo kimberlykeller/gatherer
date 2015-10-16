@@ -52,7 +52,6 @@
 
 		<p>Card</p>
 		<ul>
-			<li>Card Picture</li>
 			<li>Card Name</li>
 			<li>Converted Mana Cost</li>
 			<li>Type</li>
