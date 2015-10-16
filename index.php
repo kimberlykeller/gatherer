@@ -61,6 +61,7 @@
 			<li>Sets and&#47;or Expansions</li>
 			<li>Card Number</li>
 			<li><strong>Primary Key</strong> Multiverse ID</li>
+			<li><strong>Foriegn Key</strong> Expansion ID</li>
 			<li><strong>C Model Notes</strong> A card can be in many expansions</li>
 		</ul>
 		<p>Expansion</p>
@@ -69,7 +70,7 @@
 			<li>Release Date</li>
 			<li>Is this expansion a set? T or F</li>
 			<li>Number of cards</li>
-			<li><strong>Primary Key</strong>Expansion ID</li>
+			<li><strong>Primary Key</strong> Expansion ID</li>
 			<li><strong>C Model Notes</strong> An expansion has many cards</li>
 		</ul>
 
