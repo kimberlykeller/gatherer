@@ -17,7 +17,7 @@
 		He is desperately waiting for Google Fiber so that he can break up with Comcast, because he knows that Comcast is evil.
 		</p>
 		<p>
-		Other gaming interests include: Settlers of Catan, Sentinels of the Multiverse, Chez Geek, Call of Cthulhu, Arkham Horror.
+		Other gaming interests include: Settlers of Catan, Sentinels of the Multiverse, Chez Geek, Call of Cthulhu, Arkham Horror, Dungeons & Dragons.
 		</p>
 		<p>
 		<strong>Goal:</strong> He desires to gain accurate information about the <em>Magic: The Gathering</em> card or grouping of cards that he has searched for.
@@ -57,7 +57,6 @@
 			<li>Converted Mana Cost</li>
 			<li>Type</li>
 			<li>Rules Text</li>
-			<li>P&#47;T &#40;power&#47;toughness&#41;</li>
 			<li>Rarity</li>
 			<li>Sets and&#47;or Expansions</li>
 			<li>Card Number</li>
@@ -76,6 +75,8 @@
 		<hr>
 		<h3>Conceptual Model</h3>
 		<p>Many to many </p>
+
+
 
 	</body>
 </html>
