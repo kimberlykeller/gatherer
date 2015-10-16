@@ -69,6 +69,7 @@
 			<li>Release Date</li>
 			<li>Is this expansion a set? T or F</li>
 			<li>Number of cards</li>
+			<li><strong>Primary Key</strong>Expansion ID</li>
 			<li><strong>C Model Notes</strong> An expansion has many cards</li>
 		</ul>
 
