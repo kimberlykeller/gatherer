@@ -21,20 +21,15 @@
 	<text transform="matrix(1 0 0 1 84.2378 258.0198)" font-family="'ArialMT'" font-size="7.9545">Type</text>
 </g>
 <g>
-	<ellipse fill="none" stroke="#000000" stroke-miterlimit="10" cx="99.6" cy="521.8" rx="35.3" ry="16.3"/>
-	<rect x="78.5" y="519.2" fill="none" width="79.4" height="28.4"/>
-	<text transform="matrix(1 0 0 1 78.5269 524.8462)" font-family="'ArialMT'" font-size="7.9545">Rarity</text>
+	<ellipse fill="none" stroke="#000000" stroke-miterlimit="10" cx="99.4" cy="469.4" rx="35.3" ry="16.3"/>
+	<rect x="78.3" y="466.8" fill="none" width="79.4" height="28.4"/>
+	<text transform="matrix(1 0 0 1 78.3269 472.4462)" font-family="'ArialMT'" font-size="7.9545">Rarity</text>
 </g>
-<ellipse fill="none" stroke="#000000" stroke-miterlimit="10" cx="98.2" cy="465.1" rx="35.3" ry="16.3"/>
-<rect x="78.1" y="457.5" fill="none" width="51.8" height="28.4"/>
-<text transform="matrix(1 0 0 1 78.1073 463.1565)" font-family="'ArialMT'" font-size="7.9545">Expansion</text>
+<ellipse fill="none" stroke="#000000" stroke-miterlimit="10" cx="98" cy="412.7" rx="35.3" ry="16.3"/>
+<rect x="77.9" y="405.1" fill="none" width="51.8" height="28.4"/>
+<text transform="matrix(1 0 0 1 77.9073 410.7565)" font-family="'ArialMT'" font-size="7.9545">Expansion</text>
 <text transform="matrix(1 0 0 1 78.1073 472.6565)" font-family="'ArialMT'" font-size="7.9545">ID</text>
-<text transform="matrix(1 0 0 1 86.1073 472.6565)" font-family="'ArialMT'" font-size="7.9545" letter-spacing="23"> </text>
-<g>
-	<ellipse fill="none" stroke="#000000" stroke-miterlimit="10" cx="99.6" cy="413.5" rx="35.3" ry="16.3"/>
-	<rect x="78.5" y="410.9" fill="none" width="79.4" height="28.4"/>
-	<text transform="matrix(1 0 0 1 78.5269 416.5662)" font-family="'ArialMT'" font-size="7.9545">Card Number</text>
-</g>
+<text transform="matrix(1 0 0 1 85.9073 420.2565)" font-family="'ArialMT'" font-size="7.9545" letter-spacing="23"> </text>
 <g>
 	<ellipse fill="none" stroke="#000000" stroke-miterlimit="10" cx="105.3" cy="307.5" rx="35.3" ry="16.3"/>
 	<rect x="84.2" y="304.9" fill="none" width="79.4" height="28.4"/>
@@ -66,9 +61,8 @@
 <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="148.4" y1="266.5" x2="208.4" y2="295.2"/>
 <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="140.6" y1="307.5" x2="202.4" y2="304.4"/>
 <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="142.6" y1="355.7" x2="217.3" y2="314.8"/>
-<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="140.6" y1="406.1" x2="235.2" y2="314.8"/>
-<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="140.6" y1="465.1" x2="259.4" y2="314.8"/>
-<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="140.6" y1="519.2" x2="272.3" y2="314.8"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="134.9" y1="405.1" x2="259.4" y2="314.8"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="140.6" y1="458" x2="272.3" y2="314.8"/>
 <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="78.4" y1="363.5" x2="121.9" y2="363.5"/>
 <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="472.4" y1="48.5" x2="424.9" y2="125.1"/>
 <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="448.7" y1="125.1" x2="474.8" y2="114.9"/>
@@ -88,6 +82,6 @@
 <text transform="matrix(1 0 0 1 301 269.52)" font-family="'ArialMT'" font-size="12">x</text>
 <rect x="353" y="170.1" fill="none" width="42" height="26"/>
 <text transform="matrix(1 0 0 1 353 178.575)" font-family="'ArialMT'" font-size="12">y</text>
-<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="78.4" y1="465.1" x2="116.9" y2="465.1"/>
-<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="78.4" y1="474.5" x2="89" y2="474.5"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="78.2" y1="412.7" x2="116.7" y2="412.7"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="78.2" y1="422.1" x2="88.8" y2="422.1"/>
 </svg>

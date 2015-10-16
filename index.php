@@ -58,7 +58,6 @@
 			<li>Rules Text</li>
 			<li>Rarity</li>
 			<li>Sets and&#47;or Expansions</li>
-			<li>Card Number</li>
 			<li><strong>Primary Key</strong> Multiverse ID</li>
 			<li><strong>Foriegn Key</strong> Expansion ID</li>
 			<li><strong>C Model Notes</strong> A card can be in many expansions</li>
