@@ -8,11 +8,14 @@
 		<h3>Setting up....</h3>
 
 		CREATE TABLE expansion (
-			name
-			releaseDate
-			numberOfCards
-			expansionOrSet
-			expansionId
+			expanName VARCHAR(128) NOT NULL,
+			expanReleaseDate DATE NOT NULL,
+			expanNumberOfCards SMALLINT UNSIGNED NOT NULL,
+			expanOrSet TINYINT UNSIGNED NOT NULL,
+			expanId INT UNSIGNED NOT NULL,
+			INDEX(releaseDate),
+			UNIQUE(expanName),
+			PRIMARY KEY(expanId),
 
 
 		CREATE TABLE card (
