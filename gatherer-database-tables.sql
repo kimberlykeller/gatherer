@@ -23,6 +23,28 @@ CREATE TABLE card (
 	expanId INT UNSIGNED NOT NULL,
 	INDEX(expanId),
 	FOREIGN KEY (expanId) REFERENCES expansion(expanId),
-	UNIQUE(cardName),
+	INDEX(cardName),
 	PRIMARY KEY(multiverseId)
 );
+
+INSERT INTO expansion(expanName, expanReleaseDate, expanNumberOfCards, expanOrSet)
+VALUES("Gatecrash","2013-02-01","249","1");
+
+INSERT INTO expansion(expanName, expanReleaseDate, expanNumberOfCards, expanOrSet)
+VALUES("From the Vault: Angels","2015-08-21","15","0");
+
+INSERT INTO card(cardName, convManaCost, type, rulesText, rarity, expanId)
+VALUES("Aurelia, The Warleader","6","Legendary Creature","
+Flying, vigilance, haste
+Whenever Aurelia, the Warleader attacks for the first time each turn,
+untap all creatures you control.
+After this phase, there is an additional combat phase.","Mythic Rare","1");
+
+INSERT INTO card(cardName, convManaCost, type, rulesText, rarity, expanId)
+VALUES("Aurelia, The Warleader","6","Legendary Creature","
+Flying, vigilance, haste
+Whenever Aurelia, the Warleader attacks for the first time each turn,
+untap all creatures you control.
+After this phase, there is an additional combat phase.","Mythic Rare","2");
+
+

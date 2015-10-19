@@ -77,7 +77,8 @@
 		<p>Many to many </p>
 		<img src="img/gatherer-erd.svg" alt="the ERD for the gatherer project">
 		<h3>Code Sample</h3>
-		<code>DROP TABLE IF EXISTS card;
+		<pre>
+			<code>DROP TABLE IF EXISTS card;
 			DROP TABLE IF EXISTS expansion;
 
 			CREATE TABLE expansion (
@@ -105,7 +106,8 @@
 			UNIQUE(cardName),
 			PRIMARY KEY(multiverseId)
 			);
-		</code>
+			</code>
+		</pre>
 
 
 
