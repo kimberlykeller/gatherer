@@ -47,4 +47,10 @@ Whenever Aurelia, the Warleader attacks for the first time each turn,
 untap all creatures you control.
 After this phase, there is an additional combat phase.","Mythic Rare","2");
 
-
+INSERT INTO card(cardName, convManaCost, type, rulesText, rarity, expanId)
+VALUES("Akroma, Angel of Fury","8","Legendary Creature",
+		 "Akroma, Angel of Fury can't be countered.
+Flying, trample, protection from white and from blue
+Red: Akroma, Angel of Fury gets +1/+0 until end of turn.
+Morph 3RedRedRed (You may cast this card face down as a 2/2 creature for 3.
+Turn it face up any time for its morph cost.)","Mythic Rare","2");
