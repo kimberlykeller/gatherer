@@ -50,7 +50,7 @@ class Expansion {
 	 * mutator method for expanId
 	 *
 	 * @param mixed $newExpanId new value of tweet id
-	 * @throws InvalidArugmentException if $newExpanId is not an integer
+	 * @throws InvalidArgumentException if $newExpanId is not an integer
 	 * @throws RangeException if $newTweetId is not positive
 	 **/
 	public function setExpanId($newExpanId) {
@@ -89,8 +89,8 @@ class Expansion {
 	 * mutator method for expansion name
 	 *
 	 * @param string $newExpanName new value of expansion name
-	 * @throws InvalidArguemntException if $newExpanName is not a string or insecure
-	 * @throws RangeExcpetion if $newExpanName is > 128 characters
+	 * @throws InvalidArgumentException if $newExpanName is not a string or insecure
+	 * @throws RangeException if $newExpanName is > 128 characters
 	 **/
 	public function setExpanName($newExpanName) {
 		//verify the expansion name is secure
