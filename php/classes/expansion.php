@@ -75,5 +75,36 @@ class Expansion {
 		$this->expanId = intval($newExpanId);
 
 	}
+
+	/**
+	 * accessor method for expansion name
+	 *
+	 * @return string value of expansion name
+	 **/
+	public function getExpanName() {
+		return($this->expanName);
+	}
+
+	/**
+	 * mutator method for expansion name
+	 *
+	 * @param string $newExpanName new value of expansion name
+	 * @throws InvalidArguemntException if $newExpanName is not a string or insecure
+	 * @throws RangeExcpetion if $newExpanName is > 128 characters
+	 **/
+	public function setExpanName($newExpanName) {
+		//verify the expansion name is secure
+		$newExpanName = trim($newExpanName);
+		$newExpanName = filter_var($newExpanName, FILTER_SANITIZE_STRING);
+		if(empty($newExpanName) === true) {
+			throw(new InvalidArgumentException("expansion name is empty or insecure"));
+		}
+		//verify the expansion name will fit in the database
+		if(strlen($newExpanName) > 128) {
+			throw(RangeException("expansion name is too large"));
+		}
+		//store expansion name
+		$this->expanName = $newExpanName;
+	}
 }
 
