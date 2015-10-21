@@ -1,4 +1,5 @@
 <?php
+require_once('validate-date.php');
 /**
  * custom filter for mySQL style dates
  *
