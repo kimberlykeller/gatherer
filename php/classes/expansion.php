@@ -28,7 +28,7 @@ class Expansion {
 	private $expanNumberOfCards;
 	/**
 	 * a 1 or a 0 indicating if the expansion is also a set. 1 for if set is true
-	 * @var int $expanOrSet
+	 * @var boolean $expanOrSet
 	 **/
 	private $expanOrSet;
 	/**
@@ -138,26 +138,21 @@ class Expansion {
 	/**
 	 * accessor method for expansion or set
 	 *
-	 *@return int value 1 for expansion is a set and 0 for expansion is not a set
+	 *@return boolean value 1 for expansion is a set and 0 for expansion is not a set
 	 **/
 	public function getExpanOrSet() {
 		return($this->expanOrSet);
 	}
 	/** mutator method for whether or not the the expansion is a set
 	 *
-	 * @param int $newExpanOrSet 1 for expansion/set and 0 for expansion !== set
-	 * @throw InvalidArgumentException if the entry is not a valid integer
-	 * @throw RangeException if the entry is not a 0 or a 1
+	 * @param boolean $newExpanOrSet 1 for expansion/set and 0 for just expansion
+	 * @throw InvalidArgumentException if not a valid boolean 1 or 0
 	 **/
 	public function setExpanOrSet($newExpanOrSet) {
 		//verify the entry is valid
-		$newExpanOrSet = filter_var($newExpanOrSet, FILTER_VALIDATE_INT);
-		if($newExpanOrSet === false) {
-			throw(new InvalidArgumentException("expansion or set is not a valid integer"));
-		}
-		//verify the entry is either a 0 or a 1
-		if($newExpanOrSet < 0 || > 1) {
-			throw(new RangeException("expansion or set must be a 0 for expansion only or 1 for also a set"));
+		$newExpanOrSet = filter_var($newExpanOrSet, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE);
+		if($newExpanOrSet === null) {
+			throw(new InvalidArgumentException("expansion or set is not a valid 1 or 0"));
 		}
 		//convert and store expansion or set
 		$this->expanOrSet = intval($newExpanOrSet);
