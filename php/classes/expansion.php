@@ -33,7 +33,7 @@ class Expansion {
 	private $expanOrSet;
 	/**
 	 * the date that the expansion was released on
-	 * @var date $expanReleaseDate
+	 * @var DateTime $expanReleaseDate
 	 **/
 	private $expanReleaseDate;
 
@@ -156,6 +156,14 @@ class Expansion {
 		}
 		//convert and store expansion or set
 		$this->expanOrSet = intval($newExpanOrSet);
+	}
+	/**
+	 * accessor method for expansion release date
+	 *
+	 * @return DateTime value of expansion release
+	 **/
+	public function getExpanReleaseDate() {
+		return($this->expanReleaseDate);
 	}
 }
 
