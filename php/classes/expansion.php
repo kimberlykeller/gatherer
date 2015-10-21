@@ -106,5 +106,13 @@ class Expansion {
 		//store expansion name
 		$this->expanName = $newExpanName;
 	}
+	/**
+	 * accessor for the number of cards in the expansion
+	 *
+	 * @return int value number of cards
+	 */
+	public function getExpanNumberOfCards() {
+		return($this->expanNumberOfCards);
+	}
 }
 
