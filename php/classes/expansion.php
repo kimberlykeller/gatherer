@@ -53,5 +53,27 @@ class Expansion {
 	 * @throws InvalidArugmentException if $newExpanId is not an integer
 	 * @throws RangeException if $newTweetId is not positive
 	 **/
+	public function setExpanId($newExpanId) {
+		//base case: if the expan id is null, this is a new expansion without a mySQL assigned id
+		if($newExpanId === null) {
+			$this->expanId = null;
+			return;
+		}
+
+		//verify the tweet id is valid
+		$newExpanId = filter_var($newExpanId, FILTER_VALIDATE_INT);
+		if($newExpanId === false) {
+			throw(new InvalidArgumentException("expan id is not a valid integer"))
+		}
+
+		//verify the expan id is positive
+		if($newExpanId <= 0) {
+			throw(new RangeException("expan id is not positive"))
+		}
+
+		//convert and store expan id
+		$this->expanId = intval($newExpanId)
+
+	}
 }
 
