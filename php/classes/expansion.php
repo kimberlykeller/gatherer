@@ -135,5 +135,14 @@ class Expansion {
 		//convert and store number of cards
 		$this->expanNumberOfCards = intval($newExpanNumberOfCards);
 	}
+	/**
+	 * accessor method for expansion or set
+	 *
+	 *@return int value 1 for expansion is a set and 0 for expansion is not a set
+	 **/
+	public function getExpanOrSet() {
+		return($this->expanOrSet);
+	}
+	/** mutator method for whether or not the the expansion is a set */
 }
 
