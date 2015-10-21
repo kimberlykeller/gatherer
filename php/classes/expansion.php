@@ -107,12 +107,33 @@ class Expansion {
 		$this->expanName = $newExpanName;
 	}
 	/**
-	 * accessor for the number of cards in the expansion
+	 * accessor method for the number of cards in the expansion
 	 *
 	 * @return int value number of cards
 	 */
 	public function getExpanNumberOfCards() {
 		return($this->expanNumberOfCards);
+	}
+
+	/**
+	 * mutator method for the number of card in the expansion
+	 *
+	 * @param int $newExpanNumberOfCards number of cards
+	 * @throws InvalidArgumentException if $newExpanNumberOfCards is not an integer
+	 * @throws RangeException if $newExpanNumberOfCards is not positive
+	 **/
+	public function setExpanNumberOfCards($newExpanNumberOfCards) {
+		//verify the number of cards is valid
+		$newExpanNumberOfCards = filter_var($newExpanNumberOfCards, FILTER_VALIDATE_INT);
+		if($newExpanNumberOfCards === false) {
+			throw(InvalidArgumentException("number of cards is not a valid integer"));
+		}
+		//verify the number of cards is positive
+		if($newExpanNumberOfCards <= 0) {
+			throw(RangeException("number of cards is not positive"));
+		}
+		//convert and store number of cards
+		$this->expanNumberOfCards = intval($newExpanNumberOfCards);
 	}
 }
 
