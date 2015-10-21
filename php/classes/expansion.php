@@ -101,7 +101,7 @@ class Expansion {
 		}
 		//verify the expansion name will fit in the database
 		if(strlen($newExpanName) > 128) {
-			throw(RangeException("expansion name is too large"));
+			throw(new RangeException("expansion name is too large"));
 		}
 		//store expansion name
 		$this->expanName = $newExpanName;
@@ -126,11 +126,11 @@ class Expansion {
 		//verify the number of cards is valid
 		$newExpanNumberOfCards = filter_var($newExpanNumberOfCards, FILTER_VALIDATE_INT);
 		if($newExpanNumberOfCards === false) {
-			throw(InvalidArgumentException("number of cards is not a valid integer"));
+			throw(new InvalidArgumentException("number of cards is not a valid integer"));
 		}
 		//verify the number of cards is positive
 		if($newExpanNumberOfCards <= 0) {
-			throw(RangeException("number of cards is not positive"));
+			throw(new RangeException("number of cards is not positive"));
 		}
 		//convert and store number of cards
 		$this->expanNumberOfCards = intval($newExpanNumberOfCards);
@@ -143,6 +143,18 @@ class Expansion {
 	public function getExpanOrSet() {
 		return($this->expanOrSet);
 	}
-	/** mutator method for whether or not the the expansion is a set */
+	/** mutator method for whether or not the the expansion is a set
+	 *
+	 * @param int $newExpanOrSet 1 for expansion/set and 0 for expansion !== set
+	 * @throw InvalidArgumentException if the entry is not a valid integer
+	 * @throw RangeException if the entry is not a 0 or a 1
+	 **/
+	public function setExpanOrSet($newExpanOrSet) {
+		//verify the entry is valid
+		$newExpanOrSet = filter_var($newExpanOrSet, FILTER_VALIDATE_INT);
+		if($newExpanOrSet === false) {
+			throw(new InvalidArgumentException("expansion or set is not a valid integer"));
+		}
+	}
 }
 
