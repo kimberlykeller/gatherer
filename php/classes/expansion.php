@@ -63,7 +63,7 @@ class Expansion {
 		//verify the tweet id is valid
 		$newExpanId = filter_var($newExpanId, FILTER_VALIDATE_INT);
 		if($newExpanId === false) {
-			throw(new InvalidArgumentException("expan id is not a valid integer"));updat
+			throw(new InvalidArgumentException("expan id is not a valid integer"));
 		}
 
 		//verify the expan id is positive
