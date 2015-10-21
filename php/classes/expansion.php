@@ -1,5 +1,5 @@
 <?php
-
+require_once('/Users/khaleesi/Desktop/bootcamp/git/gatherer/php/functions/validate-date.php');
 /**
  *A group of Magic: The Gathering cards released together is a Set/Expansion
  *
