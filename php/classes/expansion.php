@@ -155,6 +155,12 @@ class Expansion {
 		if($newExpanOrSet === false) {
 			throw(new InvalidArgumentException("expansion or set is not a valid integer"));
 		}
+		//verify the entry is either a 0 or a 1
+		if($newExpanOrSet < 0 || > 1) {
+			throw(new RangeException("expansion or set must be a 0 for expansion only or 1 for also a set"));
+		}
+		//convert and store expansion or set
+		$this->expanOrSet = intval($newExpanOrSet);
 	}
 }
 
