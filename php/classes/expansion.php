@@ -170,6 +170,7 @@ class Expansion {
 	 * @param DateTime $newExpanReleaseDate
 	 * @throws InvalidArgumentException if $newExpanReleaseDate is not a valid object or string
 	 * @throws RangeException if $newExpanReleaseDate is not a valid date
+	 * @throws Exception for all other exceptions
 	 **/
 	public function setExpanReleaseDate($newExpanReleaseDate) {
 		//base case: if the date is null use current date and time
