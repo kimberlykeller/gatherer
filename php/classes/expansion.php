@@ -1,11 +1,11 @@
 <?php
 
 /**
- *A group of Magic: The Gathering cards released together in a Set/Expansion
+ *A group of Magic: The Gathering cards released together is a Set/Expansion
  *
  *An expansion is a regularly issued printing of Magic: The Gathering cards,
  * usually following a theme. It can contain newly created cards as well as re-printings
- * of previous printed cards.
+ * of previously printed cards.
  *
  *@author Kimberly Keller <kimberly@gravitaspublications.com>
  **/
