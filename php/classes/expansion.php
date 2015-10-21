@@ -146,7 +146,7 @@ class Expansion {
 	/** mutator method for whether or not the the expansion is a set
 	 *
 	 * @param boolean $newExpanOrSet 1 for expansion/set and 0 for just expansion
-	 * @throw InvalidArgumentException if not a valid boolean 1 or 0
+	 * @throws InvalidArgumentException if not a valid boolean 1 or 0
 	 **/
 	public function setExpanOrSet($newExpanOrSet) {
 		//verify the entry is valid
@@ -165,5 +165,28 @@ class Expansion {
 	public function getExpanReleaseDate() {
 		return($this->expanReleaseDate);
 	}
+	/**
+	 * mutator method for expansion release date
+	 * @param DateTime $newExpanReleaseDate
+	 * @throws InvalidArgumentException if $newExpanReleaseDate is not a valid object or string
+	 * @throws RangeException if $newExpanReleaseDate is not a valid date
+	 **/
+	public function setExpanReleaseDate($newExpanReleaseDate) {
+		//base case: if the date is null use current date and time
+		if($newExpanReleaseDate === null) {
+			$this->expanReleaseDate = new DateTime();
+			return;
+		}
+		//store expansion release date
+		try {
+			$newExpanReleaseDate = validateDate($newExpanReleaseDate);
+		} catch(InvalidArgumentException $invalidArgument) {
+			throw(new InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
+		} catch(RangeException $range) {
+			throw(new RangeException($range->getMessage(), 0, $range));
+		} catch(Exception $exception) {
+			throw(new Exception($exception->getMessage(), 0, $exception));
+		}
+		$this->expanReleaseDate = $newExpanReleaseDate;
+	}
 }
-
