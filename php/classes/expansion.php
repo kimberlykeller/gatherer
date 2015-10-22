@@ -38,6 +38,37 @@ class Expansion {
 	private $expanReleaseDate;
 
 	/**
+	 * constructor for this Expansion
+	 *
+	 * @param mixed $newExpanId id of this expansion or null if new expansion
+	 * @param string $newExpanName name of this expansion
+	 * @param int $newNumberOfCards the number of cards in this expansion
+	 * @param boolean $newExpanOrSet indicates if the expansion is also a set, if so then the parameter is set to 1
+	 * @param datetime $newExpanReleaseDate the date the expansion was released, if null, assign current date
+	 * @throws InvalidArgumentException if the date type is not valid
+	 * @throws RangeException if the data values are out of bounds (too long, negative etc.)
+	 * @throws Exception thrown for all other exceptions
+	 **/
+	public function __construct($newExpanId, $newExpanName, $newExpanNumberOfCards, $newExpanOrSet, $newExpanReleaseDate = null) {
+		try {
+			$this->setExpanId($newExpanId);
+			$this->setExpanName($newExpanName);
+			$this->setExpanNumberOfCards($newExpanNumberOfCards);
+			$this->setExpanOrSet($newExpanOrSet);
+			$this->setExpanReleaseDate($newExpanReleaseDate);
+		} catch(InvalidArgumentException, $invalidArgument) {
+			//re-throw the exception to the caller
+			throw(new InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
+		} catch(RangeException, $range) {
+			//re-throw the exception to the caller
+			throw(new RangeException($range->getMessage(), 0, $range));
+		} catch(Exception, $exception) {
+			//re-throw generic exception
+			throw(new Exception($exception->getMessage(), 0, $exception));
+		}
+	}
+
+	/**
 	 * accessor method for expan id
 	 *
 	 * @return mixed value of expan id
