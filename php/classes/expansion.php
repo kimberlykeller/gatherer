@@ -1,5 +1,5 @@
 <?php
-require_once('/Users/khaleesi/Desktop/bootcamp/git/gatherer/php/functions/validate-date.php');
+require_once(dirname(__DIR__) . "/functions/validate-date.php");
 /**
  *A group of Magic: The Gathering cards released together is a Set/Expansion
  *
@@ -106,6 +106,7 @@ class Expansion {
 		//store expansion name
 		$this->expanName = $newExpanName;
 	}
+
 	/**
 	 * accessor method for the number of cards in the expansion
 	 *
@@ -135,6 +136,7 @@ class Expansion {
 		//convert and store number of cards
 		$this->expanNumberOfCards = intval($newExpanNumberOfCards);
 	}
+
 	/**
 	 * accessor method for expansion or set
 	 *
@@ -143,6 +145,7 @@ class Expansion {
 	public function getExpanOrSet() {
 		return($this->expanOrSet);
 	}
+
 	/** mutator method for whether or not the the expansion is a set
 	 *
 	 * @param boolean $newExpanOrSet 1 for expansion/set and 0 for just expansion
@@ -157,6 +160,7 @@ class Expansion {
 		//convert and store expansion or set
 		$this->expanOrSet = intval($newExpanOrSet);
 	}
+
 	/**
 	 * accessor method for expansion release date
 	 *
@@ -165,6 +169,7 @@ class Expansion {
 	public function getExpanReleaseDate() {
 		return($this->expanReleaseDate);
 	}
+
 	/**
 	 * mutator method for expansion release date
 	 * @param DateTime $newExpanReleaseDate
