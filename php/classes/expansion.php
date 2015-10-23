@@ -226,4 +226,35 @@ class Expansion {
 		}
 		$this->expanReleaseDate = $newExpanReleaseDate;
 	}
+
+	/**
+	 * inserts this Expansion into mySQl
+	 *
+	 * @param PDO $pdo pointer to PDO connection object
+	 * @throws PDOException when mySQL related errors occur
+	 **/
+
+	public function insert(PDO $pdo) {
+		//enforce the expanId is null (don't insert an expansion that already exists)
+		if($this->expanId !== null) {
+			throw(new PDOException("not a new expansion"));
+		}
+
+		//create query template
+		$query =
+			"INSERT INTO expansion(expanId, expanName, expanNumberOfCards, expanOrSet, expanReleaseDate) VALUES (:expanId, :expanName, :expanNumberOfCards, :expanOrSet, :expanReleaseDate)";
+		$statement = $pdo->prepare($query);
+
+		//bind the member variables to the place holders in the template
+		$formattedDate = $this->expanReleaseDate->format("Y-m-d H:i:s");
+		$parameters = array("expanId" => $this->expanId, "expanName" => $this->expanName, "expanNumberOfCards" => $this->expanNumberOfCards,
+			"expanOrSet" => $this->expanOrSet, "expanReleaseDate" => $formattedDate);
+		$statement->execute($parameters);
+
+		//update the null expanId with what mySQL just gave us
+		$this->expanId = intval($pdo->lastInsertId());
+	}
+
 }
+
+
