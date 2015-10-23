@@ -241,7 +241,8 @@ class Expansion {
 
 		//create query template
 		$query =
-			"INSERT INTO expansion(expanId, expanName, expanNumberOfCards, expanOrSet, expanReleaseDate) VALUES (:expanId, :expanName, :expanNumberOfCards, :expanOrSet, :expanReleaseDate)";
+			"INSERT INTO expansion(expanId, expanName, expanNumberOfCards, expanOrSet, expanReleaseDate)
+			VALUES (:expanId, :expanName, :expanNumberOfCards, :expanOrSet, :expanReleaseDate)";
 		$statement = $pdo->prepare($query);
 
 		//bind the member variables to the place holders in the template
@@ -258,7 +259,7 @@ class Expansion {
 	 * deletes this Expansion from mySQL
 	 *
 	 * @param PDO $pdo pointer to mySQL connection
-	 * @throws PDO exception when mySQL related errors occur
+	 * @throws PDOException when mySQL related errors occur
 	 **/
 	public function delete(PDO $pdo) {
 		//enforce that the expanId is not null (don't delete an expansion that hasn't been inserted)
@@ -272,6 +273,31 @@ class Expansion {
 
 		//bind the member variables to the place holder in the template
 		$parameters = array("expanId" => $this->expanId);
+		$statement->execute($parameters);
+	}
+
+	/**
+	 * updates this expansion in mySQL
+	 *
+	 * @param PDO $pdo pointer to PDO connection
+	 * @throws PDOException when mySQL related errors occur
+	 **/
+	public function update(PDO $pdo) {
+		//enforce that the expanId is not null (don't update an expansion that hasn't been inserted)
+		if($this->expanId === null) {
+			throw(new PDOException("unable to update an expansion that does not exist"));
+		}
+
+		//create query template
+		$query =
+			"UPDATE expansion SET expanName = :expanName, expanNumberOfCards = :expanNumberOfCards,
+			expanOrSet = :expanOrSet, expanReleaseDate = :expanReleaseDate WHERE expanId = :expanId";
+		$statement = $pdo->prepare($query);
+
+		//bind the member variables to the place holders in the template
+		$formattedDate = $this->expanReleaseDate->format("Y-m-d H:i:s");
+		$parameters = array("expanName" => $this->expanName, "expanNumberOfCars" => $this->expanNumberOfCards,
+			"expanOrSet" => $this->expanOrSet, "expanReleaseDate" => $formattedDate, "expanId" => $this->expanId);
 		$statement->execute($parameters);
 	}
 
