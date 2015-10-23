@@ -233,7 +233,6 @@ class Expansion {
 	 * @param PDO $pdo pointer to PDO connection object
 	 * @throws PDOException when mySQL related errors occur
 	 **/
-
 	public function insert(PDO $pdo) {
 		//enforce the expanId is null (don't insert an expansion that already exists)
 		if($this->expanId !== null) {
@@ -253,6 +252,27 @@ class Expansion {
 
 		//update the null expanId with what mySQL just gave us
 		$this->expanId = intval($pdo->lastInsertId());
+	}
+
+	/**
+	 * deletes this Expansion from mySQL
+	 *
+	 * @param PDO $pdo pointer to mySQL connection
+	 * @throws PDO exception when mySQL related errors occur
+	 **/
+	public function delete(PDO $pdo) {
+		//enforce that the expanId is not null (don't delete an expansion that hasn't been inserted)
+		if($this->expanId === null) {
+			throw(new PDOException("unable to delete an expansion that does not exist"));
+		}
+
+		//create query template
+		$query = "DELETE FROM expansion WHERE expanId = :expanId";
+		$statement = $pdo->prepare($query);
+
+		//bind the member variables to the place holder in the template
+		$parameters = array("expanId" => $this->expanId);
+		$statement->execute($parameters);
 	}
 
 }
